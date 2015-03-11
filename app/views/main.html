@@ -1,0 +1,41 @@
+<header>
+  <div class="logo"></div>
+
+  <div class="header-bar">
+    <h1>piqora</h1>
+
+    <div class="stats">
+      <ul>
+        <li ng-repeat="profileMetric in model.data[0].profile_metrics">
+          {{ profileMetric.value }}
+          <span>{{ profileMetric.label}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="hero-unit">
+  <div ng-repeat="primaryMetric in model.data[0].primary_metrics">
+    {{ primaryMetric.value }}
+    <span>{{ primaryMetric.label }}</span>
+  </div>
+</div>
+
+<div class="paging">
+  <a href="#">&lt;</a>
+  Page 1 of 10
+  <a href="#">&gt;</a>
+</div>
+
+<div class="pins">
+  <div class="pin" ng-repeat="item in model.data[0].items">
+    <img src="{{ item.image_url }}">
+
+    <ul>
+      <li>{{ item.repins }} <span>Total Repins</span></li>
+      <li>{{ item.likes }} <span>Total Likes</span></li>
+      <li>{{ item.comments }} <span>Total Comments</span></li>
+    </ul>
+  </div>
+</div>

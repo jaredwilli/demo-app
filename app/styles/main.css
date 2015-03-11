@@ -1,0 +1,114 @@
+/* I would obviously use .scss (SASS) for this instead, but for some reason the yeoman angular generator didn't set it up like that, but I may have missed the question when building the project with it.
+
+I used Yeoman, yes ;)
+*/
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  margin-bottom: 20px;
+}
+header .logo {
+  background: #333;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+header .header-bar {
+  display: inline-block;
+  width: 81%;
+  margin-left: 20px;
+}
+.header-bar .stats {
+  background: #ccc;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100%;
+  height: 67px;
+}
+.header-bar .stats li {
+  display: inline-block;
+  text-align: center;
+  width: 24.5%;
+  position: relative;
+}
+.header-bar .stats li span {
+  display: block;
+}
+
+.hero-unit {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.hero-unit div {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  width: 48%;
+  padding: 100px 0;
+}
+.hero-unit div:first-child {
+  margin-right: 2.5%;
+}
+.hero-unit div:last-child {
+  margin-left: 8px;
+}
+.hero-unit div span {
+  display: block;
+}
+
+.paging {
+  float: right;
+  margin: 14px 0;
+}
+
+.pins {
+  display: inline-block;
+  width: 100%;
+}
+.pins .pin {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: inline-block;
+  width: 27.5%;
+  padding: 15px;
+  margin: 10px;
+}
+
+.pins .pin img {
+  width: 100%;
+}
+.pins .pin li {
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  width: 32%;
+}
+.pins .pin li span {
+  font-size: 10px;
+  display: block;
+}
+
